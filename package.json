@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:scss": "sass --style compressed src/css/main.scss dist/css/styles.css",
+    "build:scss": "sass --style compressed src/css/main.scss dist/css/main.css",
     "build:images": "robocopy src/images dist/images /E",
     "build:html": "xcopy src\\index.html dist\\index.html /Y",
     "build": "npm run build:scss && npm run build:images && npm run build:html"
