@@ -1,0 +1,29 @@
+{
+  "name": "tarcho-kluczyk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass --style compressed src/css/main.scss dist/css/styles.css",
+    "build:images": "robocopy src/images dist/images /E",
+    "build:html": "xcopy src\\index.html dist\\index.html /Y",
+    "build": "npm run build:scss && npm run build:images && npm run build:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vyekk/tarcho-kluczyk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vyekk/tarcho-kluczyk/issues"
+  },
+  "homepage": "https://github.com/Vyekk/tarcho-kluczyk#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
