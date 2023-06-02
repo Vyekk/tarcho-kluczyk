@@ -12088,17 +12088,41 @@ h2, .h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+
+.carousel-item:nth-child(1) > .my-carousel-item-img {
   background-image: url("../images/car-key.png");
 }
 
+.carousel-item:nth-child(2) > .my-carousel-item-img {
+  background-image: url("../images/shoe-repair.jpg");
+}
+
+.carousel-item:nth-child(3) > .my-carousel-item-img {
+  background-image: url("../images/door-lock.jpg");
+}
+
+.carousel-item:nth-child(4) > .my-carousel-item-img {
+  background-image: url("../images/sharpen.jpg");
+}
+
+.carousel-item:nth-child(5) > .my-carousel-item-img {
+  background-image: url("../images/keychain.jpg");
+}
+
+.carousel-item:nth-child(6) > .my-carousel-item-img {
+  background-image: url("../images/others.jpg");
+}
+
+.my-carousel-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (min-width: 992px) {
-  .my-header {
-    background-color: transparent;
-  }
   .my-top h1, .my-top .h1 {
     margin-top: 2.5em;
-  }
-  .my-logo-text {
-    color: #986633;
   }
 }
