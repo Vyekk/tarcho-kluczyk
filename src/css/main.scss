@@ -1,7 +1,9 @@
 $title-size: 2em;
 $white: #fff;
+$black: #000;
 $primary: #986633;
 $display-font-weight: 700;
+$carousel-dark-control-icon-filter: invert(1) grayscale(100);
 @import "../../node_modules/bootstrap/scss/bootstrap";
 a {
   text-decoration: none;
@@ -36,6 +38,20 @@ body {
 }
 h2 {
   font-size: $title-size;
+}
+.my-lead {
+  font-weight: 700;
+}
+.my-social {
+  background-color: #141414;
+  font-size: 20px;
+}
+.my-carousel-item-img {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-image: url("../images/car-key.png");
 }
 @include media-breakpoint-up(lg) {
   .my-header {
