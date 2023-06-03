@@ -276,7 +276,7 @@
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="pt-3">
         <div class="container my-5">
           <h2 class="text-primary">Kontakt</h2>
           <div class="row text-black">
@@ -337,5 +337,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(".nav-link").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+      });
+    </script>
   </body>
 </html>
